@@ -1,0 +1,643 @@
+/* Import Main Font */
+@import url(https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
+@font-face {
+  font-family: SoDo Sans Regular;
+  src: url(../../fonts/SoDoSans-Regular.woff);
+}
+
+:root {
+  --main-color: #006241;
+  --black-color: #000;
+  --border-test: 2px solid #f00;
+  --section-text-color: #444646;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "SoDo Sans SemiBold", sans-serif;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100vw;
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 3px solid #dddddd;
+  color: var(--black-color);
+}
+
+.header .nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.header .nav-left img {
+  width: 50px;
+  height: 50px;
+}
+
+.header .nav-left ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 15px;
+}
+
+.header .nav-left ul li a {
+  text-decoration: none;
+  color: var(--black-color);
+  text-transform: uppercase;
+  font-family: "SoDo Sans Bold", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+}
+
+.header .nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.header .nav-right .find-store {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.header .nav-right .find-store img {
+  width: 25px;
+  height: 25px;
+}
+
+.header .nav-right .find-store h1 {
+  font-size: 14px;
+  letter-spacing: -0.2px;
+}
+
+.header .nav-right .login-register button {
+  all: unset;
+  padding: 5px 10px;
+  border: 1px solid var(--black-color);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.header .nav-right .login-register button a {
+  color: var(--black-color);
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+}
+
+.header .nav-right .login-register .register-btn {
+  margin-left: 20px;
+  background-color: var(--black-color);
+}
+
+.header .nav-right .login-register .register-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header .nav-toggle {
+  display: none;
+}
+
+/* Sections */
+
+.section-one,
+.section-two {
+  position: relative;
+  width: 85vw;
+  height: 70vh;
+  margin: 30px auto;
+  background-color: #e5ff67;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 25px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.section-one .image,
+.section-two .image {
+  width: 60%;
+  height: 100%;
+}
+
+.section-one .image img,
+.section-two .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 0 5px 0;
+  -webkit-border-radius: 5px 0 5px 0;
+  -moz-border-radius: 5px 0 5px 0;
+  -ms-border-radius: 5px 0 5px 0;
+  -o-border-radius: 5px 0 5px 0;
+}
+
+.section-one .content,
+.section-two .content {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-one .content h1,
+.section-two .content h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: var(--main-color);
+}
+
+.section-one .content h1 span,
+.section-two .content h1 span {
+  display: flex;
+  justify-content: center;
+}
+
+.section-one .content p,
+.section-two .content p {
+  text-align: center;
+  color: var(--main-color);
+  font-family: "SoDo Sans Regular", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  line-height: 36px;
+}
+
+.section-one .content button,
+.section-two .content button {
+  all: unset;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid var(--black-color);
+  cursor: pointer;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.section-one .content button a,
+.section-two .content button a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+/* Section Two */
+
+.section-two {
+  flex-direction: row-reverse;
+  background-color: #eb81a5;
+}
+
+.section-two .image {
+  width: 40vw;
+  position: absolute;
+  right: 0;
+}
+
+.section-two .content {
+  position: absolute;
+  left: 7%;
+}
+
+.section-two .content h1 {
+  color: var(--section-text-color);
+  text-align: center;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+
+.section-two .content p {
+  color: var(--section-text-color);
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.2px;
+}
+
+.section-two .content button {
+  text-align: center;
+}
+
+.section-two .content button a {
+  color: var(--section-text-color);
+}
+
+/* Section Three */
+
+.section-three {
+  position: relative;
+  width: 85vw;
+  height: 70vh;
+  margin: 30px auto;
+  background-color: #e5ff67;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 25px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.section-three .image {
+  width: 50%;
+  height: 100%;
+}
+
+.section-three .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 0 5px 0;
+  -webkit-border-radius: 5px 0 5px 0;
+  -moz-border-radius: 5px 0 5px 0;
+  -ms-border-radius: 5px 0 5px 0;
+  -o-border-radius: 5px 0 5px 0;
+}
+
+.section-three .content {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-three .content h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+  color: var(--section-text-color);
+}
+
+.section-three .content p {
+  text-align: center;
+  color: var(--section-text-color);
+  font-family: "SoDo Sans Regular", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: 36px;
+}
+
+.section-three .content button {
+  all: unset;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid var(--black-color);
+  cursor: pointer;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.section-three .content button a {
+  text-decoration: none;
+  color: var(--section-text-color);
+}
+
+/* Section Four */
+
+.section-four {
+  width: 95vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "SoDo Sans Regular";
+  font-size: 14px;
+  line-height: 25.2px;
+  letter-spacing: -0.2px;
+}
+
+.section-four .firstParagraph {
+  text-align: center;
+  width: 50%;
+}
+
+.section-four .secondParagraph {
+  margin-top: 10%;
+  text-align: center;
+  width: 50%;
+}
+
+.section-four .secondParagraph p a {
+  color: var(--section-text-color);
+}
+
+.section-four .thirdParagraph {
+  margin-top: 10%;
+  text-align: center;
+  width: 50%;
+}
+
+/* Section Five */
+
+.information {
+  width: 95vw;
+  height: 50vh;
+  margin: 5% auto;
+  border-bottom: 3px solid #dddddd;
+  border-top: 3px solid #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.information table {
+  width: 80%;
+  margin-top: 2%;
+}
+
+.information table thead,
+.information table thead tr {
+  width: 100%;
+}
+
+.information table thead th {
+  width: 20%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.information table tbody {
+  text-align: center;
+}
+
+.information table tbody tr td {
+  margin: 20px;
+  padding: 10px;
+}
+
+.information table tbody tr td a {
+  text-decoration: none;
+  color: #6f6f6f;
+  padding: 15px;
+}
+
+.footer {
+  width: 100vw;
+  background-color: #222;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer .social-links-icons {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.footer .social-links-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.footer .some-links {
+  margin-bottom: 15px;
+}
+
+.footer .some-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .reserved h1 {
+  color: #fff;
+}
+
+.footer .reserved h1 span a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: darkorange;
+}
+
+/* Pseudo Elements */
+
+.header .nav-left ul li a:hover {
+  color: var(--main-color);
+}
+
+.header .nav-right .login-register .login-btn:hover {
+  background-color: #ddd;
+}
+
+.header .nav-right .login-register .register-btn:hover {
+  background-color: #222;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1023px) {
+  .information {
+    display: none;
+  }
+  /* Phone Information Section */
+
+  .phone-information-section {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 15px;
+    border-top: 2px solid #dddddd;
+    border-bottom: 3px solid #dddddd;
+  }
+
+  .phone-information-section .About-Us {
+    width: 100%;
+    height: 20%;
+  }
+
+  .phone-information-section .AboutUs-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .phone-information-section .AboutUs-header h1 {
+    color: #6f6f6f;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .phone-information-section .AboutUs-header .open-Information {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+
+  .phone-information-section .AboutUs-header .open-Information img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .phone-information-section .AboutUs-header .open-Information i {
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+  }
+
+  .phone-information-section .AboutUs-content {
+    display: none;
+    width: 100%;
+  }
+
+  .phone-information-section .AboutUs-content ul li {
+    list-style: none;
+  }
+
+  .phone-information-section .AboutUs-content ul li a {
+    text-decoration: none;
+    color: #6f6f6f;
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 788.88px) {
+  .header .nav-left ul {
+    display: none;
+  }
+  .header .nav-right {
+    display: none;
+  }
+
+  .header .nav-toggle {
+    display: block !important;
+  }
+
+  .header .nav-toggle i {
+    font-size: 25px;
+    color: #222;
+  }
+
+  .section-one {
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .section-one .image {
+    width: 100%;
+    height: 60%;
+  }
+
+  .section-one .content {
+    width: 100%;
+    height: 40%;
+  }
+
+  .section-one .content h1 {
+    font-size: 24px;
+  }
+
+  .section-one .content p {
+    width: 90vw;
+  }
+
+  .section-two {
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .section-two .image {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+  }
+
+  .section-two .content {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .section-two .content h1 {
+    font-size: 30px;
+  }
+
+  .section-two .content p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .section-two .content button {
+    margin-bottom: 20px;
+  }
+
+  .section-three {
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .section-three .image {
+    width: 100%;
+    height: 60%;
+  }
+
+  .section-three .content {
+    width: 100%;
+    height: 40%;
+  }
+
+  .section-three .content h1 {
+    text-align: center;
+  }
+}
